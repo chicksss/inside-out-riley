@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Background Changer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="pr econnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      #backgroundDiv {
+        height: 590px;
+        width: 460px;
+        transition: background-image 10s ease;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[url(bg.jpeg)] bg-cover bg-no-repeat bg-gray-900 font-['Poppins']"
+  >
+    <section class="md:h-[70vh]">
+      <div
+        class="absolute text-white mx-auto md:ml-[550px] z-[-1] md:mt-[-130px] font-extrabold"
+      >
+        <h1 class="text-2xl animate__animated animate__backInLeft">HI i'm</h1>
+        <!-- <h1 class="text-9xl font-[Arial]">Im</h1> -->
+        <ul
+          class="flex justify-center text-9xl font-[Arial] gap-0 animate__animated animate__backInDown"
+        >
+          <li
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110"
+          >
+            R
+          </li>
+          <li
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110"
+          >
+            i
+          </li>
+          <li
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110"
+          >
+            l
+          </li>
+          <li
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110"
+          >
+            e
+          </li>
+          <li
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110"
+          >
+            y
+          </li>
+        </ul>
+      </div>
+      <a href="#emotions">
+        <img
+          src="rilery.png"
+          class="hover:transition ease-in-out hover:-translate-y hover:scale-110 mx-auto h-72 ml-72 md:ml-[470px] md:h-[550px] md:mt-[240px] md:animate__animated animate__backInUp"
+          alt=""
+          srcset=""
+        />
+      </a>
+    </section>
+
+    <div
+      id="emotions"
+      class="relative md:flex grid grid-cols-2 items-center justify-center md:h-[100vh]"
+    >
+      <div
+        id="backgroundDiv"
+        class="bg-no-repeat bg-contain md:bg-cover h-10 w-10 md:h-auto md:w-auto md:mr-[690px] md:z-10"
+      ></div>
+
+      <div class="absolute w-full max-w-lg md:mt-[400px] md:ml-[300px] z-10">
+        <div
+          id="carousel"
+          class="card mt-72 h-52 flex overflow-x-scroll space-x-4 pb-4 md:mt-10 md:p-10 md:h-60"
+        >
+          <img
+            src="joy.png"
+            alt="Image 1"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer transform hover:mt-[-20px] transition-transform duration-300 bg-[#FDF6B2] rounded-xl"
+            onclick="setBackground(this, 'joy')"
+          />
+
+          <img
+            src="sadness.png"
+            alt="Image 2"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer transform hover:mt-[-20px] transition-transform duration-300 bg-[#76A9FA] rounded-xl"
+            onclick="setBackground(this, 'sad')"
+          />
+          <img
+            src="anger.png"
+            alt="Image 3"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer transform hover:mt-[-20px] transition-transform duration-300 bg-[#F05252] rounded-xl"
+            onclick="setBackground(this, 'anger')"
+          />
+
+          <img
+            src="faea.png"
+            alt="Image 3"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer hover:mt-[-20px] transform hover:scale-105 transition-transform duration-300 bg-[#ff54f6] rounded-xl"
+            onclick="setBackground(this, 'fear')"
+          />
+
+          <img
+            src="disgust.png"
+            alt="Image 3"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer transform hover:mt-[-20px] hover:scale-105 transition-transform duration-300 bg-[#62ff59] rounded-xl"
+            onclick="setBackground(this, 'disgust')"
+          />
+
+          <img
+            src="annn.png"
+            alt="Image 3"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer hover:mt-[-20px] transform hover:scale-105 transition-transform duration-300 bg-[#e27c00] rounded-xl"
+            onclick="setBackground(this, 'anxiety')"
+          />
+
+          <img
+            src="ennui.png"
+            alt="Image 3"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer hover:mt-[-20px] transform hover:scale-105 transition-transform duration-300 bg-[#c435c0] rounded-xl"
+            onclick="setBackground(this, 'ennui')"
+          />
+
+          <img
+            src="embarassment.png"
+            alt="Image 3"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer hover:mt-[-20px] transform hover:scale-105 transition-transform duration-300 bg-[#f4b2f5] rounded-xl"
+            onclick="setBackground(this, 'embarrasment')"
+          />
+
+          <img
+            src="envy.png"
+            alt="Image 3"
+            class="hover:transition ease-in-out hover:-translate-y hover:scale-110 md:h-[160px] md:w-auto cursor-pointer hover:mt-[-20px] transform hover:scale-105 transition-transform duration-300 bg-[#6ffff0] rounded-xl"
+            onclick="setBackground(this, 'envy')"
+          />
+          <!-- Add more images as needed -->
+        </div>
+        <button
+          id="prev"
+          class="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-700 text-white px-2 py-1 rounded"
+        ></button>
+        <button
+          id="next"
+          class="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-700 text-white px-2 py-1 rounded"
+        ></button>
+      </div>
+
+      <div
+        id="joy"
+        class="card absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(255, 237, 32, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">JOY</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="sad"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(63, 131, 248, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">SADNESS</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+      <div
+        id="anger"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(255, 32, 32, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">ANGER</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="fear"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(203, 0, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">FEAR</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="disgust"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(0, 255, 13, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">DISGUST</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="anxiety"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(255, 120, 0, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">ANXIETY</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="ennui"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(196, 53, 192, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">ENNUI</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="embarrasment"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: #f4b2f556;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">EMBARASSMENT</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="envy"
+        class="card hidden absolute inset-0 flex flex-col items-center justify-center"
+      >
+        <div
+          class="absolute inset-0"
+          style="
+            background: rgba(111, 255, 240, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+          "
+        ></div>
+        <div class="relative md:ml-96 md:mb-20 mt-[-200px] p-5">
+          <h1 class="text-white text-6xl">ENVY</h1>
+          <p class="text-white md:w-[500px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+            nulla quo ea architecto recusandae voluptas dolor. Facere, est
+            ratione nam beatae suscipit,
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function setBackground(img, emotion) {
+        const backgroundDiv = document.getElementById("backgroundDiv");
+
+        // Set the background image
+        backgroundDiv.style.backgroundImage = `url(${img.src})`;
+
+        // Hide all emotion texts
+        const emotions = [
+          "joy",
+          "sad",
+          "anxiety",
+          "anger",
+          "fear",
+          "disgust",
+          "ennui",
+          "embarrasment",
+          "envy",
+        ];
+        emotions.forEach((emotion) => {
+          const emotionElement = document.getElementById(emotion);
+          if (emotionElement) {
+            emotionElement.classList.add("hidden");
+          }
+        });
+
+        // Show the selected emotion text
+        const selectedEmotionElement = document.getElementById(emotion);
+        if (selectedEmotionElement) {
+          selectedEmotionElement.classList.remove("hidden");
+        }
+      }
+
+      const carousel = document.getElementById("carousel");
+      const nextButton = document.getElementById("next");
+      const prevButton = document.getElementById("prev");
+
+      nextButton.addEventListener("click", () => {
+        carousel.scrollBy({
+          left: carousel.offsetWidth,
+          behavior: "smooth",
+        });
+      });
+
+      prevButton.addEventListener("click", () => {
+        carousel.scrollBy({
+          left: -carousel.offsetWidth,
+          behavior: "smooth",
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
